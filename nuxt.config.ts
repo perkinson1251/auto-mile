@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: process.env.NODE_ENV === "production" ? false : true },
-  modules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss", "@nuxtjs/supabase"],
   tailwindcss: {
     viewer: process.env.NODE_ENV === "production" ? false : true,
   },
