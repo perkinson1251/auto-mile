@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "nuxtr.nuxt-vscode-extentions",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}

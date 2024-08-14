@@ -7,10 +7,26 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "lint": "bunx eslint .",
+    "format": "bunx prettier --write ."
   },
   "dependencies": {
     "nuxt": "^3.12.4",
     "vue": "latest"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "bunx eslint --fix"
+    ],
+    "**/*": "bunx prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@nuxt/eslint": "^0.5.0",
+    "eslint": "^9.9.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3"
   }
 }
