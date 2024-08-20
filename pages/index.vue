@@ -1,9 +1,10 @@
 <script lang="ts" setup>
-import Button from '@/components/ui/Button.vue';
+import NavBar from '~/components/NavBar.vue';
+import { Button } from '~/components/ui/button';
 </script>
 <template>
   <div>
-    <h1>Hello world!</h1>
-    <Button>Test button</Button>
+    <NavBar />
+    <Button variant="outline">123</Button>
   </div>
 </template>

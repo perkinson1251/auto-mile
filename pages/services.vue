@@ -1,6 +1,4 @@
 <script lang="ts" setup></script>
 <template>
-  <div class="w-full h-full">
-    <slot />
-  </div>
+  <header>Hello world!</header>
 </template>
