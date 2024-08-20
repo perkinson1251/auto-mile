@@ -34,9 +34,9 @@ const availableLocales = computed(() => {
           </DropdownMenuTrigger>
           <DropdownMenuContent class="w-56">
             <DropdownMenuItem
-              v-for="locale in availableLocales"
-              :key="locale.code"
-              @click.prevent.stop="setLocale(locale.code)"
+              v-for="loc in availableLocales"
+              :key="loc.code"
+              @click.prevent.stop="setLocale(loc.code)"
             >
               <User class="mr-2 h-4 w-4" />
               <span>{{ locale.name }}</span>
